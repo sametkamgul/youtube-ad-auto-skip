@@ -1,0 +1,29 @@
+{
+    "name": "Youtube Ad Auto Skip && Close",
+    "description": "Closes ads automatically when the skip and close buttons are revealed. Remainder: it is not a ad blocker. It is a friendly ad skipper. The Ads will be displayed as it should be",
+    "version": "1.0",
+    "author": "Samet Kamğul",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js",
+        "persistance": true
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "css": ["style.css"],
+            "js": ["inject.js"]
+        }
+    ]
+}

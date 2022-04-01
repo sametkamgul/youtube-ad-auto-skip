@@ -1,0 +1,10 @@
+body {
+    width: 400px;
+    height: 400px;
+    background-color: azure;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+}
