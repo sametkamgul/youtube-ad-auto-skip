@@ -8,11 +8,7 @@
         "service_worker": "background.js",
         "persistance": true
     },
-    "permissions": [
-        "activeTab",
-        "scripting",
-        "tabs"
-    ],
+    "permissions": ["activeTab", "scripting", "tabs"],
     "action": {
         "default_popup": "popup.html"
     },
@@ -21,5 +17,13 @@
             "matches": ["https://*.youtube.com/*"],
             "js": ["inject.js"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "assets/icon16.png",
+        "32": "assets/icon32.png",
+        "64": "assets/icon64.png",
+        "128": "assets/icon128.png",
+        "256": "assets/icon256.png",
+        "512": "assets/icon512.png"
+    }
 }
