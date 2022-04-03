@@ -1,5 +1,6 @@
+// bakckground service
+
 chrome.runtime.onInstalled.addListener(() => {
-    console.log('working...');
 });
 
 chrome.action.onClicked.addListener((tab) => {
