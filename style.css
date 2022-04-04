@@ -6,9 +6,9 @@
 body {
     width: 400px;
     height: 350px;
-    background-color: black;
+    background-color: white;
     color: red;
-    border: solid 8px red;
+    border: solid 10px red;
     margin: auto;
     padding: 0%;
 }
@@ -17,11 +17,12 @@ button {
     font-size: 24px;
     font-family: 'Righteous-Regular';
     height: 40px;
-    color: red;
+    color: white;
     width: 75%;
     margin-left: 12%;
     border: 0px;
     border-radius: 10px;
+    background-color: red;
 }
 
 .input-container {
@@ -39,15 +40,15 @@ button {
     width: 100%;
     text-align: center;
     padding-top: 16px;
-    padding-bottom: 16px;
-    color: white;
+    padding-bottom: 30px;
+    color: black;
 }
 
 .footer {
     font-size: 16px;
     font-family: 'Righteous-Regular';
     font-style: italic;
-    color: antiquewhite;
+    color: red;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -55,7 +56,7 @@ button {
 }
 
 a {
-    color: #ff9200;
+    color: black;
 }
 
 input {
@@ -66,13 +67,18 @@ input {
     font-size: 14px;
     font-family: 'Righteous-Regular';
     font-style: italic;
-    color: antiquewhite;
+    color: black;
     text-align: center;
     margin: auto;
     width: 100%;
     padding-left: 52px;
 }
 
-#timeout-select {
-    padding-left: 20px;
+#timeout-select-label {
+    padding-left: 52px;
+}
+
+button:hover {
+    color: red;
+    background-color: black;
 }

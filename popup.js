@@ -30,6 +30,11 @@ saveButton.addEventListener('click', (event) => {
         // sending message to inject
         chrome.tabs.sendMessage(tabs[0].id, payload);
     });
+
+    saveButton.textContent = 'saved!';
+    setTimeout(() => {
+        saveButton.textContent = 'save';
+    }, 2000);
 });
 
 // sending data to consent - UI update
