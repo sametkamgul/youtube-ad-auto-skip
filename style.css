@@ -1,42 +1,57 @@
+@font-face {
+    font-family: 'Righteous-Regular';
+    src: URL('assets/Righteous-Regular.ttf') format('truetype');
+}
+
 body {
     width: 400px;
-    height: 270px;
+    height: 350px;
     background-color: black;
     color: red;
-    border: solid;
+    border: solid 8px red;
+    margin: auto;
+    padding: 0%;
 }
 
 button {
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Righteous-Regular';
     height: 40px;
     color: red;
     width: 75%;
     margin-left: 12%;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .input-container {
     font-size: 16px;
+    font-family: 'Righteous-Regular';
     width: 90%;
-    padding: 10px;
+    padding: 6px;
     margin: auto;
 }
 
 .header {
-    font-size: 16px;
+    font-size: 25px;
+    font-family: 'Righteous-Regular';
     margin: auto;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: white;
 }
 
 .footer {
     font-size: 16px;
+    font-family: 'Righteous-Regular';
     font-style: italic;
     color: antiquewhite;
     margin: auto;
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-top: 12px;
 }
 
 a {
@@ -44,5 +59,20 @@ a {
 }
 
 input {
-    margin-left: 27%;
+    margin-left: 24%;
+}
+
+#timeout-hint {
+    font-size: 14px;
+    font-family: 'Righteous-Regular';
+    font-style: italic;
+    color: antiquewhite;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-left: 52px;
+}
+
+#timeout-select {
+    padding-left: 20px;
 }

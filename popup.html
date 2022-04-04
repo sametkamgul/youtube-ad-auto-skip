@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <label for="">youtube ad auto skip & close banner extension</label>
-    </div>
-    <div class="container">
-        <div class="input-container">
-            <input type="checkbox" name="" id="input-skip-video-ads">
-            <label for="">skip video ads</label>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <label for="">youtube auto ad skip extension</label>
         </div>
-        <div class="input-container">
-            <input type="checkbox" name="" id="input-skip-img-banner-ads">
-            <label for="">skip image banner ads</label>
+        <div class="container">
+            <div class="input-container">
+                <input type="checkbox" name="" id="input-skip-video-ads" />
+                <label for="">skip video ads</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="" id="input-skip-img-banner-ads" />
+                <label for="">skip image banner ads</label>
+            </div>
+            <div class="input-container">
+                <input
+                    type="checkbox"
+                    name=""
+                    id="input-skip-text-banner-ads"
+                />
+                <label for="">skip text banner ads</label>
+            </div>
+            <div class="input-container">
+                <label for="timeout-select" id="timeout-select-label">Choose a timeout:</label>
+
+                <select name="timeouts" id="timeout-select">
+                    <option value="">--Please choose an value--</option>
+                    <option value="0">skip immeditely</option>
+                    <option value="1000">1 sec</option>
+                    <option value="2000">2 sec</option>
+                    <option value="5000">5 sec</option>
+                    <option value="10000">10 sec</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label id="timeout-hint"
+                    >hint: wait a specific time and skip ad</label
+                >
+            </div>
+            <div class="input-container">
+                <button id="save-button">save</button>
+            </div>
         </div>
-        <div class="input-container">
-            <input type="checkbox" name="" id="input-skip-text-banner-ads">
-            <label for="">skip text banner ads</label>
+        <div class="footer">
+            <a
+                href="https://www.google.com"
+                target="_blank"
+                id="buy-me-a-coffee-link"
+                >buy me a coffee</a
+            >
         </div>
-        <div class="input-container">
-            <button id="save-button">save</button>
-        </div>
-    </div>
-    <div class="footer">
-        <a href="https://www.google.com" target="_blank" id="buy-me-a-coffee-link">buy me a coffee</a>
-    </div>
-    <script type="text/javascript" src="popup.js"></script>
-</body>
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
 </html>
