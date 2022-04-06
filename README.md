@@ -1,2 +1,2 @@
 # youtube-ad-auto-skip-close-banner
- automatic skip ad && close banner for youtube web
+Youtube Ad Auto Skip

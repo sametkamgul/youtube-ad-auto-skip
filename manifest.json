@@ -1,6 +1,6 @@
 {
     "name": "Youtube Ad Auto Skip",
-    "description": "Close ads automatically!. Remainder: it is not a ad blocker. It is a friendly ad skipper. The Ads will be displayed as it should be. If you want, you can set a timer and display ads certain amount of time and skip it!",
+    "description": "Close ads automatically!. If you want, you can set a timer and display ads certain amount of time and skip it!",
     "version": "1.0",
     "author": "Samet Kamğul",
     "manifest_version": 3,

@@ -7,6 +7,20 @@ let optionTimeout = document.querySelector('#timeout-select');
 let payload;
 let config;
 
+// checks the youtube opened in active tab 
+window.addEventListener('DOMContentLoaded', (event) => {    
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        if (!tabs[0].url.includes('https://www.youtube.com')) {
+            if (confirm('Extension only works for YouTube!\nPlease visit https://www.youtube.com')) {
+                window.open('https://www.youtube.com', '_blank');
+            }
+            window.close();
+            return;
+        }
+    });
+});
+
+// button click event for popup UI
 saveButton.addEventListener('click', (event) => {
     // sending data to consent
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {

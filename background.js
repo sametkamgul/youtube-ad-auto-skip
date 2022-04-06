@@ -1,7 +1,6 @@
 // bakckground service
 
-chrome.runtime.onInstalled.addListener(() => {
-});
+chrome.runtime.onInstalled.addListener(() => {});
 
 chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript({

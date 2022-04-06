@@ -1,6 +1,6 @@
 // inject script
 
-let debug = true;
+let debug = false;
 let refreshRate = 500;
 
 let bannerTextInv = null;
@@ -30,7 +30,7 @@ config = checkSession(config);
 // video ad class ytp-ad-preview-image
 // video ad skip button class: ytp-ad-skip-button
 
-// event listener
+// event listener for get data packet
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (!request) return;
 
@@ -102,7 +102,7 @@ function setBannerImg(timeout) {
 
 // video ad function
 function setVideoAd(timeout) {
-    console.log('timeout', timeout);
+    if (debug) console.log('timeout', timeout);
     try {
         if (
             document.querySelector('.ytp-ad-preview-image') != null &&
@@ -124,13 +124,14 @@ function setVideoAd(timeout) {
     }
 }
 
+// setting skipper intervals
 function setSkippers(config) {
     // clear intervals
     clearInterval(bannerTextInv);
     clearInterval(bannerImageInv);
     clearInterval(videoAdInv);
 
-    console.log(config);
+    if (debug) console.log(config);
 
     // set image banner
     if (config.isImgAdSkip == true) {
@@ -201,11 +202,10 @@ function checkSession() {
         timeout: timeout,
     };
 
-    console.log('c', c);
-
     return c;
 }
 
+// set session
 function setSession(config) {
     window.localStorage.setItem('text-banner-skip', config.isTextAdSkip);
     window.localStorage.setItem('image-banner-skip', config.isImgAdSkip);
