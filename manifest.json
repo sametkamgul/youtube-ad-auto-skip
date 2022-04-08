@@ -1,6 +1,6 @@
 {
     "name": "Youtube Ad Auto Skip",
-    "description": "Close ads automatically!. If you want, you can set a timer and display ads certain amount of time and skip it!",
+    "description": "",
     "version": "1.0",
     "author": "Samet Kamğul",
     "manifest_version": 3,
@@ -19,11 +19,8 @@
         }
     ],
     "icons": {
-        "16": "assets/icon16.png",
-        "32": "assets/icon32.png",
-        "64": "assets/icon64.png",
+        "16": "assets/icon32.png",
         "128": "assets/icon128.png",
-        "256": "assets/icon256.png",
         "512": "assets/icon512.png"
     }
 }
