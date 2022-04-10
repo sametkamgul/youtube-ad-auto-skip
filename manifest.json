@@ -8,7 +8,7 @@
         "service_worker": "background.js",
         "persistance": true
     },
-    "permissions": ["activeTab", "scripting", "tabs"],
+    "permissions": ["activeTab", "scripting"],
     "action": {
         "default_popup": "popup.html"
     },
