@@ -1,6 +1,5 @@
-# youtube-ad-auto-skip-close-banner
-Youtube Ad Auto Skip - Chrome Extension
-
+# Youtube Ad Auto Skip - Chrome Extension
+[try extension on Chrome Web Store!](https://chrome.google.com/webstore/detail/youtube-ad-auto-skip/mdgiihcikbanieepjeemmekjcgdijhgd?hl=tr&authuser=0)
 # DESCRIPTION
 Youtube Ad Auto Skip extension allows you to skip YouTube ads easily!
 
